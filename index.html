@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <script src="binaryen.js" async></script>
+  <script src="main.bundle.js"></script>
+  <style>
+    canvas {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    Demos <button id="demo_snake">Snake game</button> <button id="demo_donut">3D ascii donut</button>
+  </div>
+  <label><input id="optionCompile" type="checkbox" checked />compile to wasm</label>
+  <table>
+    <tr>
+      <td>
+        <div class="input" style="width:600px">
+          <textarea id="code_box" style="resize: none; width: 600px;" rows="35" autocapitalize="off" autocomplete="off"
+            autocorrect="off" spellcheck="false" wrap="off"></textarea>
+        </div>
+        <div>
+          <button id="run_btn">run</button>
+        </div>
+      </td>
+      <td>
+        <div id="canvas_area"></div>
+      </td>
+      <td>
+        <div id="terminal_area"></div>
+      </td>
+    </tr>
+  </table>
+  <div id=debug style="max-height:200px; max-width: 500px; overflow:auto"></div>
+</body>
+
+</html>
